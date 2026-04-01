@@ -19,3 +19,26 @@ header {
   padding: 20px;
   border-radius: 12px;
 }
+
+ /*Agustin puso los inputs en vertical */
+input, select {
+    display: block;
+    margin-bottom: 20px;
+     height: 40px;      /* 🔼 más alto */
+    font-size: 16px;   /* 🔼 texto más grande */
+    width: 100%;  
+}
+
+/* Agustin puso los botones mismo tamaño */
+button {
+    display: block;
+    width: 100%;
+    height: 35px;
+    margin-top: 5px;
+}
+
+/* agustin puso el botón registrar azul */
+button[type="submit"] {
+    background-color: #3b6ea5;
+    color: white;
+}
