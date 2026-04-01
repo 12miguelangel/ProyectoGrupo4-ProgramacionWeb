@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Registro de Alumnos</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header>
@@ -17,9 +17,22 @@
       <input type="text" id="nombre" placeholder="Nombre" required>
       <input type="text" id="apellido" placeholder="Apellido" required>
       <input type="text" id="celular" placeholder="Número Celular" required>
-      <button type="submit">Registrar</button>
-      <button type="button" id="limpiar">Limpiar lista</button>
-    </form>
+      
+      <!-- ✅ AGUSTIN: Se agrega ciudad -->
+      <input type="text" id="ciudad" placeholder="Ciudad">
+
+    <!-- ✅ AGUSTIN: Se agrega edad -->
+    <input type="number" id="edad" placeholder="Edad">
+
+    <!-- ✅ AGUSTIN: Se agrega sexo -->
+    <select id="sexo">
+      <option value="">Sexo</option>
+      <option value="Masculino">Masculino</option>
+      <option value="Femenino">Femenino</option>
+    </select>
+          <button type="submit">Registrar</button>
+          <button type="button" id="limpiar">Limpiar lista</button>
+        </form>
 
     <section>
       <h2>Lista de alumnos</h2>
