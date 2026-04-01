@@ -1,24 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <title>Registro de Alumnos</title>
-    <style>
-        body {
-            background: linear-gradient(to bottom, lightblue,black);
-            min-height: 100vh;
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Alumnos</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <header>
     <h1>Registro de Alumnos - Grupo 4</h1>
+    <p>Proyecto colaborativo con Git y GitHub</p>
+  </header>
+
+  <main class="contenedor">
     <form id="formAlumno">
-        <input type="text" id="nombre" placeholder="Nombre">
-        <input type="text" id="apellido" placeholder="Apellido">
-        <input type="text" id="celular" placeholder="Número Celular">
-        <button type="button">Registrar</button>
+      <input type="text" id="nombre" placeholder="Nombre" required>
+      <input type="text" id="apellido" placeholder="Apellido" required>
+      <input type="text" id="celular" placeholder="Número Celular" required>
+      <button type="submit">Registrar</button>
+      <button type="button" id="limpiar">Limpiar lista</button>
     </form>
-    <ul id="lista"></ul>
+
+    <section>
+      <h2>Lista de alumnos</h2>
+      <ul id="lista"></ul>
+      <p id="contador">Total registrados: 0</p>
+    </section>
+  </main>
+
+  <script src="js/script.js"></script>
 </body>
+
+<footer>
+  <p>Grupo 4 - INFOTEP</p>
+</footer>
+
 </html>
